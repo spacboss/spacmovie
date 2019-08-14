@@ -49,8 +49,6 @@
     ]
   },
   "prettier": {
-    "trailingComma": "es5",
-    "singleQuote": true,
-    "bracketSpacing": false
+    "trailingComma": "es5"
   }
 }
