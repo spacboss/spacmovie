@@ -1,9 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import './App.css';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import "./App.css";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
+import Home from "../Home/Home";
+import About from "../About/About";
 
 function App() {
   return (
@@ -11,7 +14,8 @@ function App() {
       <div className="app">
         <Header></Header>
         <div className="app-content">
-          <h1>Baz</h1>
+          <Route exact path="/" component={Home}></Route>
+          <Route path="/about" exact component={About}></Route>
         </div>
         <Footer></Footer>
       </div>
