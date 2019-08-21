@@ -1,4 +1,24 @@
 .header {
-  background-color: #555;
-  height: 50px;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+.header-logo {
+  color: rgb(190, 55, 55);
+  width: 50px;
+}
+
+.list-item {
+  display: inline;
+  color: yellow;
+  padding: 10px;
+  margin: 2px;
+  font-size: 20px;
+}
+
+.logo {
+  width: 100px;
 }
