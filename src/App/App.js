@@ -12,7 +12,10 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header></Header>
+        <Header
+          logoText="Spaculetzul"
+          menu={["Popular", "New", "Search"]}
+          imgSrc="http://thenewcode.com/assets/images/thumbnails/homer-simpson.svg"></Header>
         <div className="app-content">
           <Route exact path="/" component={Home}></Route>
           <Route path="/about" exact component={About}></Route>
