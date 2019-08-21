@@ -1,9 +1,32 @@
 .card {
   color: yellow;
-  border: 2px dotted rgb(131, 158, 235);
-  border-width: 10px;
+  background-color: grey;
+  border: 2px solid rgb(131, 158, 235);
+  border-width: 2px;
   padding: 8px;
   display: flex;
   justify-content: center;
   align-self: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-column: 2;
+}
+
+.card-img1 {
+  width: 100px;
+}
+
+.card-img2 {
+  width: 100px;
+}
+
+.card-img3 {
+  width: 100px;
+}
+
+.card-img4 {
+  width: 100px;
 }

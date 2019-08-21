@@ -1,8 +1,9 @@
 import React from "react";
 import "./Collection.css";
+import Card from "../Card/Card";
 
-function Collection(props) {
-  return <div className="COLLECTION">{props.col}</div>;
+function Collection() {
+  return <Card></Card>;
 }
 
 export default Collection;
