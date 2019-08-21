@@ -15,11 +15,8 @@ function Card() {
         <h5>HOMER </h5>
 
         <p class="par">
-          {" "}
-          <br></br>It has survived not only five centuries, but also the leap
-          into electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages.{" "}
+          <br></br>Age: 45 years old<br></br>
+          Status: Married
         </p>
       </div>
 
@@ -51,6 +48,17 @@ function Card() {
         />
         <h5>LISA</h5>
         <p></p>
+      </div>
+
+      <div id="cf">
+        <img
+          class="bottom"
+          src="https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/33151/article_featured%401x.jpg"
+        />
+        <img
+          class="top"
+          src="https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/31629/article_featured%401x.jpg"
+        />
       </div>
     </div>
   );
