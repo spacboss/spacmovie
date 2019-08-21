@@ -1,0 +1,9 @@
+.CARD {
+  color: yellow;
+  border: 2px dotted rgb(131, 158, 235);
+  border-width: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
