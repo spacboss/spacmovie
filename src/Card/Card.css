@@ -1,11 +1,11 @@
 .card {
   color: yellow;
-  background-color: grey;
-  border: 2px solid rgb(131, 158, 235);
-  border-width: 2px;
+  background-image: radial-gradient(#32e5fc, #31abf7);
+  border: 2px outset white;
+  border-width: 8px;
   padding: 8px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-self: center;
 }
 
@@ -13,6 +13,7 @@
   display: grid;
   grid-gap: 10px;
   grid-column: 2;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card-img1 {
@@ -20,7 +21,7 @@
 }
 
 .card-img2 {
-  width: 100px;
+  width: 94px;
 }
 
 .card-img3 {
@@ -29,4 +30,10 @@
 
 .card-img4 {
   width: 100px;
+}
+
+.par {
+  color: white;
+  font-style: bold;
+  text-align: center;
 }

@@ -11,8 +11,16 @@ function Card() {
           src="https://s3.amazonaws.com/rapgenius/Homer_Simpson_Vector_by_bark2008.png"
           alt=""
         />
+
         <h5>HOMER </h5>
-        <p></p>
+
+        <p class="par">
+          {" "}
+          <br></br>It has survived not only five centuries, but also the leap
+          into electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages.{" "}
+        </p>
       </div>
 
       <div className="card">
