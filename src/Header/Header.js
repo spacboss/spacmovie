@@ -11,7 +11,7 @@ function Header(props) {
       <div className="header-logo">
         <img className="logo" src={props.imgSrc} alt="" />
       </div>
-      <ul>
+      <ul className="header-menu">
         {props.menu.map(item => (
           <li className="list-item" key={item}>
             {item}

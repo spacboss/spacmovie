@@ -22,3 +22,19 @@
 .logo {
   width: 100px;
 }
+
+.header-menu {
+  position: relative;
+}
+.list-item::after {
+  content: "|";
+  padding-left: 20px;
+}
+
+.list-item:last-child::after {
+  content: "";
+}
+
+.title {
+  padding: 10px;
+}

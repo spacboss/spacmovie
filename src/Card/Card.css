@@ -1,61 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .card {
-  color: yellow;
-  background-image: radial-gradient(#32e5fc, #31abf7);
-  border: 2px outset white;
-  border-width: 8px;
-  padding: 8px;
-  display: flex;
-  justify-content: start;
-  align-self: center;
+  color: white;
+  background-color: #3d3c3a;
+  padding: 0;
+  display: block;
+  border-radius: 10px;
 }
 
 .grid {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-column: 2;
   grid-template-columns: 1fr 1fr;
 }
 
-.card-img1 {
+.card-img {
   width: 100px;
-}
-
-.card-img2 {
-  width: 94px;
-}
-
-.card-img3 {
-  width: 100px;
-}
-
-.card-img4 {
-  width: 100px;
+  float: left;
+  border-radius: 5px;
 }
 
 .par {
   color: white;
   font-style: bold;
   text-align: left;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
-#cf {
-  position: absolute;
-  left: 210px;
-  top: 500px;
-  height: 281px;
-  width: 450px;
-  margin: 0 auto;
+.button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 5%;
+  padding: 5px;
 }
 
-#cf img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+.button:hover {
+  background-color: #4caf50; /* Green */
+  color: blue;
+  border-radius: 12%;
 }
 
-#cf img.top:hover {
-  opacity: 0;
+.genre {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.card-div {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.text {
+  padding: 10px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: flex-end;
 }
