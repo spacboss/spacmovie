@@ -2,7 +2,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-image: url("https://www.xmple.com/wallpaper/black-white-glow-brown-hexagon-gradient-1920x1080-c4-000000-ffffff-a0522d-000000-l2-1-24-a-30-f-6.svg");
+  background-color: white;
 }
 
 .app-content {

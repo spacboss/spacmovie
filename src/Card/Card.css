@@ -7,13 +7,6 @@
   border-radius: 10px;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 20px;
-  grid-column: 2;
-  grid-template-columns: 1fr 1fr;
-}
-
 .card-img {
   width: 100px;
   float: left;
@@ -29,15 +22,14 @@
 }
 
 .button {
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   border-radius: 5%;
   padding: 5px;
 }
 
 .button:hover {
-  background-color: #4caf50; /* Green */
-  color: blue;
+  background-color: #4caf50;
   border-radius: 12%;
 }
 

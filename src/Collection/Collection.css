@@ -1,3 +1,61 @@
-.COLLECTION {
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.card {
   color: white;
+  background-color: #3d3c3a;
+  padding: 0;
+  display: block;
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-column: 2;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-img {
+  width: 100px;
+  float: left;
+  border-radius: 5px;
+}
+
+.par {
+  color: white;
+  font-style: bold;
+  text-align: left;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 5%;
+  padding: 5px;
+}
+
+.button:hover {
+  background-color: #4caf50;
+  border-radius: 12%;
+}
+
+.genre {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.card-div {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.text {
+  padding: 10px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: flex-end;
 }
