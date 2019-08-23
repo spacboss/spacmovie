@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
 .header {
-  background-color: rgb(43, 43, 43);
+  background-color: #021c1e;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,10 +14,11 @@
 
 .list-item {
   display: inline;
-  color: yellow;
+  color: white;
   padding: 10px;
   margin: 2px;
   font-size: 20px;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .logo {
@@ -27,7 +29,7 @@
   position: relative;
 }
 .list-item::after {
-  content: "|";
+  content: "";
   padding-left: 20px;
 }
 

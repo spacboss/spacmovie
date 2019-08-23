@@ -1,24 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .card {
   color: white;
-  background-color: #3d3c3a;
+  background-color: #021c1e;
   padding: 0;
   display: block;
-  border-radius: 10px;
+  border-radius: 0px;
+  min-width: 0;
 }
 
 .card-img {
-  width: 100px;
   float: left;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .par {
   color: white;
   font-style: bold;
   text-align: left;
-  padding: 10px;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  max-height: 120px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }
 
 .button {
@@ -26,29 +34,35 @@
   transition-duration: 0.4s;
   border-radius: 5%;
   padding: 5px;
+  background-color: grey;
+  border-color: grey;
+  margin-bottom: 10px;
 }
 
 .button:hover {
-  background-color: #4caf50;
+  background-color: #1e201e;
   border-radius: 12%;
+  color: white;
+}
+.button-div {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .genre {
-  padding: 10px;
+  display: flex;
+
   font-size: 12px;
 }
 
+.genre-item {
+  padding: 5px 0px 5px 5px;
+}
 .card-div {
   display: flex;
-  padding: 10px;
   justify-content: space-around;
 }
 
 .text {
-  padding: 10px;
-}
-
-.button-div {
-  display: flex;
-  justify-content: flex-end;
+  padding: 20px;
 }

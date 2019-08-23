@@ -24,7 +24,6 @@
   color: white;
   font-style: bold;
   text-align: left;
-  padding: 10px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -41,13 +40,12 @@
 }
 
 .genre {
-  padding: 10px;
   font-size: 12px;
 }
 
 .card-div {
   display: flex;
-  padding: 10px;
+
   justify-content: space-around;
 }
 

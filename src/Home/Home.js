@@ -1,13 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Collection from "../Collection/Collection.js";
-
+import "./Home.css";
 function Home() {
   return (
-    <div>
-      <Link to="about">Go To About Page</Link>
-      <Collection col="vbvbvbvb"></Collection>
-    </div>
+    <Link to="about">Go To About Page</Link>,
+    (
+      <div>
+        <div>
+          <div className="home-title">Popular</div>
+          <Collection
+            sorting="popularity.desc"
+            cardCount={4}
+            collectionName="Popular"></Collection>
+          <button class="button-home">
+            <span>See more </span>
+          </button>
+        </div>
+
+        <div className="home-title">New </div>
+        <Collection
+          sorting="release_date.desc"
+          cardCount={4}
+          collectionName="New"></Collection>
+      </div>
+    )
   );
 }
 

@@ -1,12 +1,17 @@
 import React from "react";
 import "./Card.css";
 import { API_KEY } from "../constants.js";
+import { Link } from "react-router-dom";
 
 function Card({ title, genres, description, src, index }) {
   return (
     <div className="card">
       <div className="card-div">
-        <img src={src} className="card-img" src={src} alt="" />
+        {src ? (
+          <img src={src} className="card-img" />
+        ) : (
+          <img src="http://www.movienewz.com/img/films/poster-holder.jpg" />
+        )}
         <div className="text">
           <ul className="genre">
             {genres.map((genre, index) => (
