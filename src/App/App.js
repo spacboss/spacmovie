@@ -21,7 +21,7 @@ function App() {
             { link: "/new", title: "New" },
             { link: "/search", title: "Search" },
           ]}
-          imgSrc="https://www.freelogodesign.org/file/app/client/thumb/2310dc58-7d53-4a42-8622-bd5d2168f957_200x200.png?1566557899205"></Header>
+          imgSrc="https://www.freelogodesign.org/file/app/client/thumb/651af6f6-ab78-440c-8f3f-4ca4803002e5_200x200.png?1566566636491"></Header>
         <div className="app-content">
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" exact component={About}></Route>
