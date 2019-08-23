@@ -6,12 +6,11 @@
   display: block;
   border-radius: 0px;
   min-width: 0;
+  margin-top: 15px;
 }
 
 .card-img {
-  float: left;
-  border-radius: 5px;
-  padding: 10px;
+  width: 330px;
 }
 
 .par {
@@ -32,21 +31,22 @@
 .button {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  border-radius: 5%;
-  padding: 5px;
-  background-color: grey;
-  border-color: grey;
+
+  background-color: #66a5ad;
+  border-color: #66a5ad;
+
   margin-bottom: 10px;
 }
 
 .button:hover {
-  background-color: #1e201e;
-  border-radius: 12%;
+  background-color: #021c1e;
+  border-radius: 0%;
   color: white;
+  font-size: 20px;
 }
 .button-div {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .genre {
@@ -65,4 +65,8 @@
 
 .text {
   padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }

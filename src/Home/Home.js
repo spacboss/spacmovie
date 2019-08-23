@@ -7,7 +7,7 @@ function Home() {
     <Link to="about">Go To About Page</Link>,
     (
       <div>
-        <div>
+        <div class="home-grid">
           <div className="home-title">Popular</div>
           <Collection
             sorting="popularity.desc"

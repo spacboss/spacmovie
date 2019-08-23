@@ -2,15 +2,19 @@ import React from "react";
 import "./Card.css";
 import { API_KEY } from "../constants.js";
 import { Link } from "react-router-dom";
+import { tsPropertySignature } from "@babel/types";
 
-function Card({ title, genres, description, src, index }) {
+function Card({ title, genres, description, src, index, to }) {
   return (
     <div className="card">
       <div className="card-div">
         {src ? (
           <img src={src} className="card-img" />
         ) : (
-          <img src="http://www.movienewz.com/img/films/poster-holder.jpg" />
+          <img
+            className="no-image"
+            src="https://s3-ap-southeast-1.amazonaws.com/silverscreen-photos/1534489151m000001.jpg"
+          />
         )}
         <div className="text">
           <ul className="genre">
@@ -24,9 +28,9 @@ function Card({ title, genres, description, src, index }) {
           <p className="title">{title}</p>
           <p className="par">{description}</p>
           <div className="button-div">
-            <button className="button" type="button">
+            <Link to={to} className="button">
               Read more
-            </button>
+            </Link>
           </div>
         </div>
       </div>

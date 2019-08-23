@@ -45,3 +45,12 @@
   font-size: 50px;
   padding: 20px 10px 20px 0px;
 }
+
+.no-imge {
+  width: 300px;
+}
+
+.home-grid {
+  max-width: 1400;
+  margin-top: 10px;
+}

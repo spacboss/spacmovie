@@ -28,6 +28,7 @@ class Collection extends React.Component {
                 movie.poster_path &&
                 "https://image.tmdb.org/t/p/w500" + movie.poster_path,
               genres: movie.genre_ids,
+              id: movie.id,
             };
           }),
         });
@@ -47,7 +48,8 @@ class Collection extends React.Component {
                   title={movie.title}
                   description={movie.description}
                   genres={movie.genres}
-                  src={movie.src}></Card>
+                  src={movie.src}
+                  to={"/movie/" + movie.id}></Card>
               );
             })}
         </div>
