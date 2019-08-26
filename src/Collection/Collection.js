@@ -4,7 +4,6 @@ import Card from "../Card/Card";
 import { API_KEY } from "../constants.js";
 class Collection extends React.Component {
   state = {
-    status: "succes",
     movies: [],
   };
 
