@@ -7,13 +7,13 @@ function Home() {
     <Link to="about">Go To About Page</Link>,
     (
       <div>
-        <div class="home-grid">
+        <div className="home-grid">
           <div className="home-title">Popular</div>
           <Collection
             sorting="popularity.desc"
             cardCount={4}
             collectionName="Popular"></Collection>
-          <button class="button-home">
+          <button className="button-home">
             <span>See more </span>
           </button>
         </div>

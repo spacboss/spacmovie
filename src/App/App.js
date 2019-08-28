@@ -10,6 +10,7 @@ import About from "../About/About";
 import New from "../New/New";
 import Popular from "../Popular/Popular";
 import Movie from "../Movie/Movie";
+import Search from "../Search/Search";
 function App() {
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
           <Route path="/new" exact component={New}></Route>
           <Route path="/popular" exact component={Popular}></Route>
           <Route path="/movie/:id" exact component={Movie}></Route>
+          <Route path="/search" exact component={Search}></Route>
         </div>
         <Footer></Footer>
       </div>

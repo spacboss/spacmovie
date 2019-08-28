@@ -18,7 +18,7 @@ class Trailer extends React.Component {
           console.log("!!!", movie);
           this.setState({
             movie: {
-              src: movie.results[0].key,
+              // src: movie.results[0].key,
             },
           });
         });
@@ -27,10 +27,9 @@ class Trailer extends React.Component {
     return (
       <div>
         <div className="trailer-card">
-          <p className="text-trailer">TRAILER</p>
           <iframe
-            width="560"
-            height="315"
+            width="1250"
+            height="500"
             src={`https://www.youtube.com/embed/${this.state.movie.src}`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

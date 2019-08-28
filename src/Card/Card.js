@@ -9,13 +9,14 @@ function Card({ title, genres, description, src, index, to }) {
     <div className="card">
       <div className="card-div">
         {src ? (
-          <img src={src} className="card-img" />
+          <img className="card-img" src={src} />
         ) : (
           <img
             className="no-image"
             src="https://s3-ap-southeast-1.amazonaws.com/silverscreen-photos/1534489151m000001.jpg"
           />
         )}
+
         <div className="text">
           <ul className="genre">
             {genres.map((genre, index) => (
