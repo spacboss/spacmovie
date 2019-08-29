@@ -12,7 +12,6 @@ class Movie extends React.Component {
   };
 
   componentDidMount() {
-    console.log("componentDidMount");
     if (this.props.match.params.id)
       fetch(
         "https://api.themoviedb.org/3/movie/" +
@@ -22,7 +21,6 @@ class Movie extends React.Component {
       )
         .then(response => response.json())
         .then(movie => {
-          console.log("@@@@@", movie);
           this.setState({
             movie: {
               trailer: "",
@@ -45,7 +43,6 @@ class Movie extends React.Component {
     )
       .then(response => response.json())
       .then(castList => {
-        console.log("castList", castList);
         this.setState({
           cast: castList.cast.map((actor, index) => {
             return {
@@ -61,34 +58,35 @@ class Movie extends React.Component {
   }
 
   render() {
-    console.log("render");
-    console.log(this.state.movie);
     return (
       <div className="individual-card-movie">
         <div className="image-and-text">
           <img className="image-movie" src={this.state.movie.src} alt="" />
-          <div className="text-card-movie">
-            <p className="movie-title"> {this.state.movie.title}</p>
+          <div className="actors-and-text">
+            {" "}
+            <div className="text-card-movie">
+              <p className="movie-title"> {this.state.movie.title}</p>
 
-            <ul className="genre-display">
-              {this.state.movie.genres.map((genre, index) => (
-                <li className="genre-list" key={index}>
-                  {genre.name}
-                </li>
-              ))}
-            </ul>
+              <ul className="genre-display">
+                {this.state.movie.genres.map((genre, index) => (
+                  <li className="genre-list" key={index}>
+                    {genre.name}
+                  </li>
+                ))}
+              </ul>
 
-            {this.state.movie.description ? (
-              <p className="movie-description">
-                {this.state.movie.description}
-              </p>
-            ) : (
-              <p>Plot unknown</p>
-            )}
+              {this.state.movie.description ? (
+                <p className="movie-description">
+                  {this.state.movie.description}
+                </p>
+              ) : (
+                <p>Plot unknown</p>
+              )}
+            </div>
+            <Trailer id={this.props.match.params.id}></Trailer>
+            <Actors actors={this.state.cast}></Actors>
           </div>
         </div>
-        <Actors actors={this.state.cast}></Actors>
-        <Trailer id={this.props.match.params.id}></Trailer>
       </div>
     );
   }

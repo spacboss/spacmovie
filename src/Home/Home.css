@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 .button-home {
-  display: inline-block;
   border-radius: 4px;
   background-color: #021c1e;
   border: none;
@@ -45,13 +44,18 @@
   color: #021c1e;
   font-size: 50px;
   padding: 20px 10px 20px 0px;
+  text-shadow: 2px 2px 5px white;
 }
 
-.no-imge {
-  width: 300px;
+.no-image {
+  width: 330px;
+  height: 495px;
 }
 
 .home-grid {
   max-width: 1400;
   margin-top: 10px;
+}
+.card-div {
+  box-shadow: 5px 5px 10px #021c1e;
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
+
 .individual-actor {
   box-shadow: 0px 8px 16px 0px black;
   background-color: #66a5ad;
@@ -7,27 +9,33 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: 1;
-  grid-gap: 20px;
+  grid-gap: 10px;
+  width: 980px;
+  padding-top: 40px;
+  justify-content: space-evenly;
 }
 .actor-role {
   font-size: 20px;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-top: 5px;
 }
 .actor-name {
   font-size: 30px;
+  color: #021c1e;
+  font-family: "Nanum Gothic", Bold, sans-serif;
+  padding-top: 8px;
 }
 
 .actor-image {
   width: 220px;
+
+  box-shadow: 5px 5px 10px #021c1e;
 }
 
 .no-actor-image {
   width: 220px;
   height: 330px;
-}
-.actors-introduction {
-  font-size: 40px;
-  padding-bottom: 10px;
-  font-family: "Nanum Gothic", sans-serif;
 }
 
 .actors-section {
@@ -40,6 +48,9 @@
 }
 
 .text-actor {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0px 10px 0px 10px;
+}
+
+.actor-details {
+  width: 220px;
 }

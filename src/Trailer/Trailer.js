@@ -15,11 +15,8 @@ class Trailer extends React.Component {
       )
         .then(response => response.json())
         .then(movie => {
-          console.log("!!!", movie);
           this.setState({
-            movie: {
-              // src: movie.results[0].key,
-            },
+            movie: {},
           });
         });
   }
@@ -28,7 +25,7 @@ class Trailer extends React.Component {
       <div>
         <div className="trailer-card">
           <iframe
-            width="1250"
+            width="910"
             height="500"
             src={`https://www.youtube.com/embed/${this.state.movie.src}`}
             frameBorder="0"

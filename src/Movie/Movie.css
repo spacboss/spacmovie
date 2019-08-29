@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 .image-movie {
   width: 300px;
   height: 400px;
   float: left;
-  padding-right: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 8px 16px 0px black;
 }
 .individual-card {
   margin-top: 30px;
@@ -19,23 +21,31 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
   background-color: #021c1e;
   margin-top: 20px;
 }
 .movie-title {
-  font-size: 20px;
-  padding: 20px;
-  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 30px;
 }
-.movie-genre {
-  font-size: 20px;
-  padding: 20px;
+.title {
+  font-size: 2em;
+
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+.genre-item {
+  font-size: 13px;
+
   font-family: "Nanum Gothic", sans-serif;
 }
 .genre-display {
   display: flex;
   flex-direction: row;
   padding-left: 10px;
+  padding-top: 20px;
+  color: #66a5ad;
 }
 .genre-list {
   padding-left: 10px;
@@ -47,12 +57,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.trailer-card {
-  display: flex;
-  justify-content: center;
-  background-color: #66a5ad;
-  padding-top: 40px;
-}
 .movie-image-card {
   background-color: #66a5ad;
+}
+.actors-and-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
