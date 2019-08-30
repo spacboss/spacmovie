@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 .individual-actor {
   box-shadow: 0px 8px 16px 0px black;
   background-color: #66a5ad;
@@ -15,7 +15,7 @@
   justify-content: space-evenly;
 }
 .actor-role {
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   font-family: "Nanum Gothic", sans-serif;
   padding-top: 5px;
@@ -23,7 +23,7 @@
 .actor-name {
   font-size: 30px;
   color: #021c1e;
-  font-family: "Nanum Gothic", Bold, sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   padding-top: 8px;
 }
 
